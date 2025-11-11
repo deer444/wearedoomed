@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DOM_JS. Считываем информацию из DOM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="passport_dom">
+  <header class="site-header">
+    <nav class="main-nav">
+        <a class="logo-link" href="index.html"><img src="images/rock.jpg" alt="Logo" class="logo-thumb"></a>
+      <ul class="nav-list">
+        <li><a href="index.html" data-link>главная</a></li>
+        <li><a href="bands.html" data-link>банды</a></li>
+        <li><a href="forms.html" data-link>заказать мерч</a></li>
+        <li><a href="passport_dom.html" data-link>паспорт</a></li>
+        <li><a href="algo.html" data-link>решение задачи</a></li>
+        <li><a href="contact.html" data-link>контакты</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%BA" target="_blank" rel="noopener">информация на вики</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>страницы паспорта 2 и 3</h1>
+        <button onclick="setLanguage()">изменить язык</button>
+        <div id="pas" class="passport">
+      <p>Паспорт выдан: УМВД РОССИИ ПО СЕДОВА</p>
+      <p>Дата выдачи: 1987.02.14</p> <p>Код подразделения: 345-236</p>
+      <p>Фамилия: <strong id="surname">Сизова</strong></p>
+      <p>Имя: <strong id="givenname">Анастасия</strong></p>
+      <p>Отчество: Борисовна</p>
+      <p>Дата рождения: <strong id="birthyear">16.06.2005</strong></p>
+      <p>Место рождения: угля</p>
+  </div>
+
+    <h2>DOM_JS. считываем информацию из DOM</h2>
+    <button id="read-dom">кнопка</button>
+
+    <div id="dom-result" class="dom-result"></div>
+    <img src="images/domm.jpg" alt="screenshot" style="max-width:600px;display:block;margin-top:10px;">
+
+  </main>
+
+</footer class="footer">
+<h1 style="margin-left: 450px">рок &#128511 </h1>
+  </footer>
+<a href="#top" target="_self">
+    <h2>наверх</h2>
+</a> 
+  <script src="js/dom_tasks.js"></script>
+</body>
+</html>

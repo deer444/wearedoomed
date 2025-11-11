@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>заказать мерч</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="forms">
+  <header class="site-header">
+    <nav class="main-nav">
+        <a class="logo-link" href="index.html"><img src="images/rock.jpg" alt="Logo" class="logo-thumb"></a>
+      <ul class="nav-list">
+        <li><a href="index.html" data-link>главная</a></li>
+        <li><a href="bands.html" data-link>банды</a></li>
+        <li><a href="forms.html" data-link>заказать мерч</a></li>
+        <li><a href="passport_dom.html" data-link>паспорт</a></li>
+        <li><a href="algo.html" data-link>решение задачи</a></li>
+        <li><a href="contact.html" data-link>контакты</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%BA" target="_blank" rel="noopener">информация на вики</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>заказать пакет с воздухом</h1>
+    <p>оформление заказа (от 5000 рублей)</p>
+
+    <form id="order-form" action="https://www.google.ru/?hl=ru" method="get" target="_blank">
+      <fieldset>
+        <legend>ваши данные (мы их сольём)</legend>
+        <div class="form-row">
+            <label for="surname">фамилия</label>
+            <input type="text" id="surname" name="surname" value="иванов" required>
+        </div>
+
+        <div class="form-row">
+            <label for="name">имя</label>
+            <input type="text" id="name" name="name" value="иван" required>
+        </div>
+
+        <div class="form-row">
+            <label for="lastname">отчество</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+
+        <div class="form-row">
+            <label for="adress">адрес</label>
+            <input type="text" id="adress" name="adress">
+        </div>
+
+        <div class="form-row">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-row">
+            <label for="date">дата отправки</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form-row">
+            <label for="coin-set">пакет с воздухом</label>
+            <select id="coin-set" name="coin-set">
+                <option value="">выберите воздух</option>
+                <option value="starter">свежий воздух</option>
+                <option value="premium">воздух из закрытого помещения</option>
+                <option value="collector">углекислый газ</option>
+            </select>
+        </div>
+
+        <input type="hidden" name="campaign" value="rock-promo-2025">
+
+        <label for="comments">комментарии к заказу</label>
+        <textarea id="comments" name="comments">без комментариев</textarea>
+      </fieldset>
+
+      <button type="submit" class="btn">submit</button>
+    </form>
+  </main>
+
+</footer class="footer">
+<h1 style="margin-left: 450px">рок &#128511 </h1>
+  </footer>
+<a href="#top" target="_self">
+    <h2>наверх</h2>
+</a>
+  <script src="js/main.js"></script>
+</body>
+</div>
+</html>

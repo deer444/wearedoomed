@@ -1,0 +1,65 @@
+/* style.css - site-wide */
+:root{
+    --accent:#2196f3;
+    --bg:#f5f7fb;
+    --nav-bg:#222;
+    --nav-color:#fff;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:var(--bg);
+    color:#222;
+    line-height:1.5;
+  }
+  .site-header{background:var(--nav-bg);padding:10px 12px}
+  .main-nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .logo-thumb{width:48px;height:48px;object-fit:cover;border-radius:4px}
+  .nav-list{list-style:none;display:flex;gap:12px;margin:0;padding:0}
+  .nav-list a{color:var(--nav-color);text-decoration:none;padding:6px 8px;border-radius:4px}
+  .nav-list a:hover{background:rgba(255,255,255,0.06)}
+  .nav-list a.active{background:var(--accent);color:#fff}
+  
+  /* container */
+  .container{max-width:980px;margin:20px auto;padding:12px;background:#fff;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,0.06)}
+  
+  /* buttons */
+  .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:5px;border:none;cursor:pointer}
+  .btn:hover{opacity:0.95}
+  
+  /* local nav */
+  .local-nav{margin:10px 0;padding:6px 0}
+  
+  /* table with background */
+  .styled-table{
+    width:100%;
+    border-collapse:collapse;
+    background-image:url('../images/table-bg.jpg');
+    background-size:cover;
+    color:#fff;
+    padding:12px;
+  }
+  .styled-table td{vertical-align:top;padding:12px;background:rgba(0,0,0,0.35)}
+  
+  /* caption & thumbnails */
+  figure{margin:12px 0}
+  figcaption{font-size:0.9rem;color:#666}
+  .caption{font-size:0.9rem;color:#444}
+  
+  /* form styles */
+  form label{display:block;margin-top:8px}
+  input[type="text"],input[type="email"],input[type="tel"],input[type="password"],input[type="date"],textarea,input[type="number"]{
+    width:100%;padding:8px;margin-top:4px;border-radius:4px;border:1px solid #ccc;
+  }
+  
+  /* small helpers */
+  .dom-result{background:#f2f8ff;padding:10px;border:1px dashed #bcd; margin-top:10px}
+  
+  /* responsive */
+  @media (max-width:700px){
+    .nav-list{flex-direction:column;background:#111;padding:8px;border-radius:6px}
+    .container{margin:8px}
+  }
+  
+  
