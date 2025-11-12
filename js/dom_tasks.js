@@ -1,12 +1,8 @@
-// dom_tasks.js
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('read-dom');
     if (!btn) return;
   
     btn.addEventListener('click', () => {
-      // Demonstrate grabbing values from the DOM
-      // The assignment suggested e.g. document.getElementsByTagName('p')[2].childNodes[1].innerText
-      // We'll read from the specific IDs we created above
       const surname = document.getElementById('surname')?.innerText || '';
       const given = document.getElementById('givenname')?.innerText || '';
       const year = document.getElementById('birthyear')?.innerText || '';
@@ -15,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       out.innerHTML = `<p>Фамилия: <strong>${surname}</strong></p>
                        <p>Имя: <strong>${given}</strong></p>
                        <p>Год рождения: <strong>${year}</strong></p>
-                       <p>Пример селектора (пример из задания): <code>document.getElementsByTagName('p')[2].childNodes[1].innerText</code></p>`;
+                       </code></p>`;
     });
   });
 
@@ -42,3 +38,4 @@ function setLanguage()
         translate = false
     }
 }
+
