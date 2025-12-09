@@ -1,0 +1,15 @@
+/* site.css — кастомные стили поверх Bootstrap */
+:root{--accent:#c92a2a}
+body{background:#0b0b0b;color:#e9e9e9}
+.navbar-brand img{border-radius:6px}
+.hero-image{border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.card img{height:180px;object-fit:cover}
+a{color:var(--accent)}
+/* Active nav styling */
+.nav-list .nav-link.active{background:var(--accent);color:#fff;border-radius:
+6px}
+/* inside-page anchor links look */
+main a[href^="#"]{text-decoration:underline}
+/* responsive adjustments if necessary */
+@media (max-width:576px){
+.hero-image{max-height:220px}
